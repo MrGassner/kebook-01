@@ -1,0 +1,295 @@
+/* page resets */
+html {
+    box-sizing: border-box;
+    min-height: 100%;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(239,249,245);
+    background: linear-gradient(135deg, rgba(239,249,245,1) 10%, rgba(194,224,237,1) 74%, rgba(207,198,219,1) 86%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* General styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 20px;
+    padding-top: 80px;
+}
+
+h4 {
+    font-size: 0.6rem;
+    margin: 0;
+    font-weight: 800;
+}
+
+/* header */
+header > h2 {
+    margin: 0;
+}
+
+header > p {
+    font-size: 0.8rem;
+    margin: 5px;
+}
+
+/* perfil quantity */
+.quantity {
+    background-color: white;
+    border-radius: 15px;
+    margin: 10px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 550px;
+    max-width: 90vw;
+}
+
+.arrows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    cursor: default;
+    height: 50px;
+}
+
+.arrows > button {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+
+button > img {
+    width: 40px;
+}
+
+.arrows > h1 {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(101, 101, 101);
+    font-size: 3rem;
+    margin: 0;
+}
+
+.arrow {
+    cursor: pointer;
+}
+
+/* input range */
+input[type=range] {
+    height: 27px;
+    -webkit-appearance: none;
+    margin: 0;
+    max-width: 90%;
+    width: 200px;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 1px 1px 1px #000000;
+    background: linear-gradient(to right, #9906b6, #49048d);
+    border-radius: 37px;
+    border: 0px solid #D5D5D5;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    box-shadow: 2px 2px 1px #000000;
+    border: 1px solid #C9C9C9;
+    height: 18px;
+    width: 18px;
+    border-radius: 18px;
+    background: #FFFFFF;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -4.5px;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: linear-gradient(to right, #9906b6, #49048d);
+  }
+  input[type=range]::-moz-range-track {
+    max-width: 90%;
+    width: 200px;
+    height: 10px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 1px 1px 1px #000000;
+    background: linear-gradient(to right, #9906b6, #49048d);
+    border-radius: 37px;
+    border: 0px solid #D5D5D5;
+  }
+  input[type="range"]::-moz-range-progress {
+    background-color: green;
+  }
+  input[type=range]::-moz-range-thumb {
+    box-shadow: 2px 2px 1px #000000;
+    border: 1px solid #C9C9C9;
+    height: 18px;
+    width: 18px;
+    border-radius: 18px;
+    background: #FFFFFF;
+    cursor: pointer;
+  }
+  input[type=range]::-ms-track {
+    max-width: 90%;
+    width: 200px;
+    height: 10px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+  input[type=range]::-ms-fill-lower {
+    background: linear-gradient(to right, #9906b6, #49048d);
+    border: 0px solid #D5D5D5;
+    border-radius: 74px;
+    box-shadow: 1px 1px 1px #000000;
+  }
+  input[type=range]::-ms-fill-upper {
+    background: linear-gradient(to right, #9906b6, #49048d);
+    border: 0px solid #D5D5D5;
+    border-radius: 74px;
+    box-shadow: 1px 1px 1px #000000;
+  }
+  input[type=range]::-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 2px 2px 1px #000000;
+    border: 1px solid #C9C9C9;
+    height: 18px;
+    width: 18px;
+    border-radius: 18px;
+    background: #FFFFFF;
+    cursor: pointer;
+  }
+  input[type=range]:focus::-ms-fill-lower {
+    background: linear-gradient(to right, #9906b6, #49048d);
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background: linear-gradient(to right, #9906b6, #49048d);
+  }
+
+.socials {
+    display: flex;
+    gap: 10px;
+    margin: 5px;
+}
+
+.social {
+    width: 25px;
+}
+
+/* period */
+.selector {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.btn-selector {
+    background-color: white;
+    padding: 15px;
+    width: 150px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.active {
+    background-image: linear-gradient(to right, #9906b6, #49048d);
+    color: white;
+}
+
+.active:hover {
+    background-image: linear-gradient(to right, #b914da, #540e9b);
+    filter: drop-shadow(1px 1px 5px #49048d);
+}
+
+.mensal {
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+}
+
+.anual {
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+}
+
+/* prices */
+.prices {
+    background-color: white;
+    border-radius: 15px;
+    width: 500px;
+    max-width: 85vw;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.priceHeader {
+    background-image: linear-gradient(to right, #9906b6, #49048d);
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    padding: 10px;
+    color: white;
+}
+
+.priceHeader > h3 {
+    margin: 0;
+}
+
+.priceHeader > p {
+    margin: 0;
+    font-size: 0.6rem;
+}
+
+.prices > h2 {
+    margin: 8px;
+    color: rgb(101, 101, 101);
+}
+
+.prices > button {
+    background-image: linear-gradient(to right, #9906b6, #49048d);
+    margin: 0 auto 20px;
+    outline: none;
+    border: none;
+    width: 150px;
+    border-radius: 100px;
+    color: white;
+    padding: 0.5em 1em;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prices > button::after {
+    content: url(images/shopping_cart_white_24dp.svg);
+}
+
+.prices > button:hover {
+    background-image: linear-gradient(to right, #b914da, #540e9b);
+    filter: drop-shadow(1px 1px 5px #49048d);
+}
+
+

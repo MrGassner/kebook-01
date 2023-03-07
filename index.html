@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="index.js" defer></script>
+    <title>Nossos Planos</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>Nossos Planos</h2>
+            <p>Selecione o número de clientes que deseja <br>
+                gerenciar para ver nossos valores
+            </p>
+        </header>
+        <section>
+            <h4>SELECIONE A QUANTIDADE DE PERFIS</h4>
+            <div class="quantity">
+                <div class="arrows">
+                    <button><img class="arrow" src="images/sort-left.png" alt="Arrow Left"></button>
+                    <h1>1</h1>   
+                    <button><img class="arrow" src="images/sort-right.png" alt="Arrow Right"></button>
+                </div>
+                <input type="range" min="1" max="10" value="1" class="slider">
+                <h4>CADA PERFIL CONTEMPLA</h4>
+                <div class="socials">
+                    <a href="#"><img class="social" src="images/youtube.svg" alt="Youtube"></a>
+                    <a href="#"><img class="social" src="images/instagram.svg" alt="Instagram"></a>
+                    <a href="#"><img class="social" src="images/twitter.svg" alt="Twitter"></a>
+                    <a href="#"><img class="social" src="images/facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img class="social" src="images/linkedin.svg" alt="Linkedin"></a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h4>SELECIONE O PERÍODO DO SEU PAGAMENTO</h4>
+            <div class="selector">
+                <input type="radio" id="mensal" name="periodo" hidden>
+                <label class="btn-selector mensal active" for="mensal">Mensal</label>
+                <input type="radio" id="anual" name="periodo" hidden>
+                <label class="btn-selector anual" for="anual">Anual</label>
+            </div>
+        </section>
+        <section class="prices">
+            <div class="priceHeader">
+                <h3>Plano Completo</h3>
+                <p>Equivalente a mensalidade</p>
+            </div>
+                <h2>R$246,41</h2>
+                <button>Comprar Agora</button>
+        </section>
+    </div>
+</body>
+</html>
